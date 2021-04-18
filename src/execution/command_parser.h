@@ -3,7 +3,12 @@
 #include "redismodule.h"
 #include "run_info.h"
 
-typedef enum RunCommand { CMD_MODELRUN = 0, CMD_SCRIPTRUN, CMD_DAGRUN, CMD_SCRIPTEXECUTE} RunCommand;
+typedef enum RunCommand {
+    CMD_MODELRUN = 0,
+    CMD_SCRIPTRUN,
+    CMD_DAGRUN,
+    CMD_SCRIPTEXECUTE
+} RunCommand;
 
 /**
  * @brief  Parse and validate MODELRUN command: create a modelRunCtx based on the model obtained
